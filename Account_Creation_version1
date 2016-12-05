@@ -1,0 +1,40 @@
+<html>
+
+<body>
+  <form action="action_page.php" name="form1">
+    <fieldset>
+      <legend>Sign Up:</legend>
+      <br>What is your name?<br><br> First name:<br>
+      <input type="text" name="firstname" size="25"><br> Last name:<br>
+      <input type="text" name="lastname" size="25"><br><br> How old are you?<br><br>
+      <select name="age">
+   <option disabled selected value> -- select age -- </option>
+  <option value="age1">7</option>
+  <option value="age2">8</option>
+  <option value="age3">9</option>
+  <option value="age4">10</option>
+        
+</select><br><br> What is your e-mail?<br>
+      <input type="email" name="Email" size="25">
+
+
+      <br><br>Write a new password<br> (Don't tell anyone EXCEPT your parents)<br>
+      <input type="password" name="pass1" size="25"><br>
+      Confirm password<br>
+         <input type="password" name="pass2" size="25"><br>
+
+      <br>Are you a boy or a girl?<br><br>
+      <input type="radio" name="gender1" value="male"> Boy<br>
+      <input type="radio" name="gender2" value="female"> Girl<br>
+
+      <br>Select your favorite color:
+      <input type="color" name="favcolor"><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
