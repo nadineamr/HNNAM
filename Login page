@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+
+body {
+background-image: url("http://kidsplaycedaycare.com/wp-content/uploads/2013/07/kids.png");
+background-repeat:no-repeat;
+background-position: right bottom;
+
+}
+h1 {
+    position: absolute;
+    left: 850px;
+    top: 100px;
+    color: #ff66a3; 
+    font: 50px Comic Sans MS;
+    font-weight: bold;
+
+}
+.button{
+    position: absolute;
+    left: 850px;
+    top: 250px;
+    padding: 32px 35px;
+    border: none;
+    font-weight: bold;
+
+
+}
+.button2{
+    
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/500px-New_Logo_Gmail.svg.png");
+    background-size: 105px;
+    position: absolute;
+    left: 1050px;
+    top: 250px;
+    padding: 32px 35px;
+    border: none;
+    font-weight: bold;
+
+
+}
+
+p{
+    position: absolute;
+    left: 1000px;
+    top: 270px;
+
+}
+
+<!--form {
+
+    background-color: #ffe6e6;
+    width: 500px;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+
+legend{
+
+    display: block;
+    padding-left: 1000px;
+    padding-right: 2px;
+    border: none;
+}
+
+}-->
+</style>
+
+</head>
+<body>
+
+<!--<form>
+   <legend> HNNAM </legend>
+  <input type="button" name="Sign Up" ><br> 
+  <input type="button" name="Sign Up" ><br>
+  
+</form>-->
+
+<h1> New Member </h2>
+<button id="b1" type="button" class="button" >Sign up</button>
+<button id="b2" type="button"class="button2">Gmail</button>
+<p> Or</p>
+
+
+</body>
+</html>
