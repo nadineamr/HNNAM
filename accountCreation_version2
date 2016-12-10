@@ -1,0 +1,90 @@
+
+<html>
+<head>
+<style>
+
+form {
+background-image: url("http://alpineschools.org/wp-content/uploads/sites/40/2012/08/Kids-running-with-backpacks.png");
+background-repeat:no-repeat;
+background-position: right bottom;
+
+}
+legend{
+    color: #cc3300; 
+    font: 30px Comic Sans MS;
+    font-weight: bold;
+}
+fieldset{
+color: #cc3300;
+font: 13px Comic Sans MS;
+    font-weight: bold;
+}
+
+label{
+color:black;
+}
+input[type="submit"]{
+    
+    border-radius: 50%;
+	border: 2px solid #cc3300;
+	background-color: #802b00;
+	position:absolute;
+	left: 500px;
+    top: 400px;
+	padding: 40px 40px;
+	color:#f5f5ef;
+	font-weight: bold;
+}
+
+
+</style>
+</head>
+
+<body>
+  <form action="action_page.php" name="form1">
+    <fieldset>
+      <legend>Sign Up:</legend>
+      <br>What is your name? <br><br>
+	   <label for="fname">First Name</label><br>
+       <input type="text" id="fname" name="firstname"><br><br>
+	  <label for="lname">Last Name</label><br>
+      <input type="text" id="lnname" name="lastname"><br><br> How old are you?<br>
+      <select name="age">
+   <option disabled selected value> -- select age -- </option>
+  <option value="age1">7</option>
+  <option value="age2">8</option>
+  <option value="age3">9</option>
+  <option value="age4">10</option>
+        
+</select><br><br> What is your e-mail?<br>
+      <input type="email" name="Email" size="25"><br>
+
+
+      
+	   <label for="pass1"><br>Write a new password </label><br>
+	    (Don't tell anyone EXCEPT your parents)<br>
+       <input type="text" id="fname" name="firstname"><br>
+      
+	     <label for="pass2"><br>Confirm password </label><br>
+         <input type="password" name="pass2" size="25"><br>
+
+      <br>Are you a boy or a girl?<br>
+      <input type="radio" name="gender1" value="male"> Boy<br>
+      <input type="radio" name="gender2" value="female"> Girl<br>
+
+      <label for="sc"><br>Select your favorite color: </label>
+	   <select name="color">
+      <option value="col1" style="background-color:#ff1a1a;" >Red</option>
+      <option value="col2"style="background-color:#ff751a;">Orange</option>
+      <option value="col3"style="background-color:#ffff00;">Yellow</option>
+      <option value="col4"style="background-color:#00b300;">Green</option>
+	  <option value="col5"style="background-color:#0066cc;">Blue</option>
+	  <option value="col6"style="background-color:#ff4d94;">Pink</option>
+</select>
+      <input type="submit" value="Submit">
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
