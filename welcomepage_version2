@@ -1,0 +1,168 @@
+
+<html>
+<head>
+<style>
+
+body {
+background-image: url("http://www.brandedkidscloth.com/wp-content/uploads/2014/09/education-kids-smiling2-980x400-e1412619302859.png");
+background-repeat:no-repeat;
+background-position: right bottom;
+
+}
+
+
+h1{
+       
+	   font: 50px 	Comic Sans MS;
+	   font-weight:900;
+	   text-align: center;
+	   color:#cc3300;
+
+
+
+
+
+  }
+.button1 {
+        visibility: hidden;
+	     position: absolute;
+         left: 500px;
+         top: 250px;
+		 padding: 32px 35px;
+		 background-color: #802b00;
+         font-weight: bold;
+		 color: #f5f5ef;
+		 border-radius: 8px;
+		 border: 2px solid #cc3300;
+		}
+.button2
+		{
+		 visibility: hidden;
+	     position: absolute;
+         left: 500px;
+         top: 350px;
+		 padding: 32px 43px;
+		 background-color: #802b00;
+         font-weight: bold;
+		 color: #f5f5ef;
+		 border-radius: 8px;
+		 border: 2px solid #cc3300;
+		}
+
+
+}
+
+
+.container
+{
+            margin:0 auto;
+            width:90%;
+}
+.perspective
+{
+   background: url("http://dc428.4shared.com/img/QWu4ziBq/s3/doorBorder.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            display: inline;
+            float: left;
+            height: 274px;
+            width: 147px;
+            margin: 20px;
+            margin-left: 0px;
+            -webkit-perspective: 450;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .thumb
+        {
+            background: url("http://dc428.4shared.com/img/-vayshJ-/s3/ClassDoor.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 147px;
+            height: 274px;
+            position: absolute;
+            box-sizing: border-box;
+            border-radius: 3px;
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+            transition: 1s transform linear;
+            transform-origin: left;
+            cursor: pointer;
+        }
+
+        .thumbOpened
+        {
+            transform: rotateY(-45deg);
+            transform-origin: 8px;
+            transition: .5s linear;
+        }
+
+.alert {
+padding: 8px 35px 8px 14px;
+margin-bottom: 20px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: #fcf8e3;
+border: 1px solid #fbeed5;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+  color: #000;
+
+    transform-origin: left;
+  transform:rotateY(180deg);
+  opacity:0;
+  animation-name: go;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  width:350px;
+}
+@keyframes go {
+  100%{
+    opacity:1;
+    transform:rotateY(0deg);
+  }
+}
+
+</style>
+<script>
+function openDoor(field) {
+
+            var y = $(field).find(".thumb");
+            var x = y.attr("class");
+            if (y.hasClass("thumbOpened")) {
+                y.removeClass("thumbOpened");
+            }
+            else {
+                $(".thumb").removeClass("thumbOpened");
+                y.addClass("thumbOpened");
+
+            }
+			document.getElementById("b1").style.visibility = "visible";
+			document.getElementById("b2").style.visibility = "visible";
+
+        }
+
+
+</script>
+</head>
+<body>
+
+<h1>  Welcome To <br> HNNAM's World ☺ </h1>
+<button class= "button button1" id="b1" >New<br>Account</button>
+<button class="button button2" id="b2" >Login</button>
+
+
+<script src="http://s.codepen.io/assets/libs/prefixfree.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+        <div class="perspective" onclick="openDoor(this)">
+            <div class="thumb">
+            </div>
+        </div>
+
+
+</body>
+</html>
